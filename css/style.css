@@ -11407,7 +11407,6 @@ html {
 
 body {
   max-width: 100%;
-  height: auto;
   overflow-x: hidden;
   font-family: "Black Ops One", sans-serif;
   font-size: 16px;
@@ -11464,7 +11463,7 @@ body .header .headerText {
   background: url(../images/background/lookUp.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: cover;
 }
 #about .row {
   background-color: rgba(31, 31, 31, 0);
