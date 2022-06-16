@@ -1,0 +1,178 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #332f2f;
+
+    .header {
+        height: 80px;
+        background-color: #332f2f;
+
+        .headerText {
+            
+
+            position: relative;
+            z-index: 3;
+            left: 220px;
+            top: 21.5px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.navbar {
+    position: sticky;
+    z-index: 2;
+    height: 80px;
+ 
+
+    .navbar-brand h3 {
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+
+    .nav-item {
+        font-size: 1.4rem;
+        background-color: rgb(51, 47, 47, 0.6);
+        display: flex;
+        justify-content: end;
+    }
+}
+
+#home {
+
+    height: 90vh;
+    background: url(../images/background/hyperspace.jpg);
+    background-repeat: no-repeat;
+
+    #clock{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+#about {
+    min-height: 40vh;
+    background-color: #1f1f1f;
+
+    #aboutBody {
+        min-height: 45vh;
+        background: url(../images/lookUp.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80vh;
+    }
+
+    .row {
+        background-color: rgb(31, 31, 31, 0);
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+}
+
+#skills {
+ 
+    .row {
+        background-color: #1f1f1f;
+    }
+
+}
+
+#projects {
+
+    .card {
+        max-height: 90vh;
+    }
+
+    img {
+        max-height: 30vh;
+
+    }
+
+    .row {
+        background-color: #1f1f1f;
+    }
+
+    a {
+        color: #fff;
+        text-decoration-line: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+}
+
+#hobbies {
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, .4);
+
+    }
+
+    .carousel-item {
+        max-height: 90vh;
+        min-height: 100%;
+    }
+
+    .carousel-indicators {
+        z-index: 1;
+    }
+
+    .carousel-control-prev {
+        z-index: 1;
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control-next {
+        z-index: 1;
+        background-color: rgba(0, 0, 0, .4);
+    }
+}
+
+#contact {
+    height: 75vh;
+    min-height: 450px;
+
+    .formContact {
+        background-color: #1f1f1f;
+    }
+}
+
+#footer {
+    height: 25vh;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    min-height: 10vh;
+
+}
+
+// XS
+@media(max-width:575.98px) {}
+
+// SM
+@media(max-width:767.98px) {}
+
+// MD
+@media(max-width:991.98px) {}
+
+// LG
+@media(max-width:1199.98px) {}
+
+// XL
+@media(max-width:1399.98px) {}
+
+// XXL
+@media(min-width:1400px) {}

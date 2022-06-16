@@ -1,69 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Janáč - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
-    <header class="header">
-
-    </header>
-    
-    <nav class="navbar">
-        <div class="container">
-            <div class="name">Jaromír Janáč</div>
-            <ul class="nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
+    <div id="pageTop"></div>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" aria-label="Pagination">
+        <div class="container-fluid">
+            <div class="navbar-brand" href="#">
+                <h3 class="mb-0 mx-1">Jaromír Janáč</h3>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse justify-content-end" data-toggle="collapse"
+                data-target=".navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a id="homeLink" class="nav-link active" aria-current="page" href="#pageTop" onclick="setAria('home')">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aboutLink" class="nav-link" href="#about" aria-current="" onclick="setAria('about')">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="skillsLink" class="nav-link" href="#skills" aria-current="" onclick="setAria('skills')">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="projectsLink" class="nav-link" href="#projects" aria-current="" onclick="setAria('projects')">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="hobbiesLink" class="nav-link" href="#hobbies" aria-current="" onclick="setAria('hobbies')">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contactLink" class="nav-link" href="#contact" aria-current="" onclick="setAria('contact')">Contact</a>
+                        </li>
+                    </ul>
+            </div>
         </div>
     </nav>
-
-    <main class="main">
-        <div class="about">
-        <h1>About</h1>
-
+    <!-- HOME -->
+    <section id="home" class="container-fluid d-flex align-items-center">
+        <div class="mx-5">
+            <h3>Jaromír - Coder, Web Developer</h2>
+                    <a class="btn btn-info" href="https://github.com/Jaromir-Janac" target="_blank" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" title="GitHub">
+                        <span class="iconify mt-3 mx-3" data-icon="akar-icons:github-fill" style="color: white;"
+                            data-width="50" data-height="50"></span></a>
+                    <a class="btn btn-info" href="https://www.linkedin.com/in/jaromir-janac/" target="_blank" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" title="LinkedIn">
+                        <span class="iconify mt-3 mx-3" data-icon="akar-icons:linkedin-box-fill" style="color: white;"
+                            data-width="50" data-height="50"></span></a>
+                            <div id="clock" class="mx-2 mt-4">
+                                <div id="day"></div>
+                                <div id="hours"></div>
+                                <div id="minutes"></div>
+                                <div id="seconds"></div>
+                                <div id="ampm"></div>
+                            </div>
         </div>
-        <div class="projects">
-        <h1>Projects</h1>
-        
-            <div class="item">Project 1</div>
-            <div class="item">Project 2</div>
-            <div class="item">Project 3</div>
-            <div class="item">Project 4</div>
-            <div class="item">Project 5</div>
-            <div class="item">Project 6</div>
-            <div class="item">Project 7</div>
-            <div class="item">Project 8</div>
-            <div class="item">Project 9</div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="container-fluid">
+        <div class="header"><span class="headerText">>About</span></div>
+        <div id="aboutBody" class="row">
+            <div class="col-md-6 my-5">
+                <span class="mx-2" style="font-weight: bold; font-size: 2.3rem;">Jaromír Janáč</span>
+                <div class="row mt-2">
+                    <div>
+                        <button type="button" class="btn btn-info text-bg-light d-flex justify-content-start"
+                            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                            title="C#, Java, JavaScript, VB.net, Xamarin, Asp.net">Coder</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-info text-bg-light d-flex justify-content-start"
+                            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                            title="HTML5, CSS3, Bootstrap5,React, PHP, Nette">Web
+                            Developer</button>
+                    </div>
+                   
+
+                    <div>
+                        <button type="button" class="btn btn-info text-bg-light d-flex justify-content-start"
+                            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                            title="MS Access, Oracle, SQL, MySQL, MS SQL Server">Database
+                            Specialist</button>
+                    </div>
+                 
+
+                    <div>
+                        <button type="button" class="btn btn-info text-bg-light d-flex justify-content-start"
+                            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                            title="Space Engineers, Kerbal Space Program, SpaceX">Space
+                            Enthusiast</button>
+                    </div>
+         
+                </div>
+              
+
+            </div>
+    </section>
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container-fluid">
+            <div class="header"><span class="headerText">>Skills</span></div>
+            <div class="row">
+                <!-- PROGRAMMING -->
+                <div class="col-md-6 col-lg-3 my-5">
+                    <h3 class="mx-3">Programming</h3>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="CSharp">
+                        <span class="iconify" data-icon="mdi:language-csharp" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="Java">
+                        <span class="iconify" data-icon="la:java" style="color: white;" data-width="50" data-height="50"
+                            data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="JavaScript">
+                        <span class="iconify" data-icon="fluent:javascript-16-regular" style="color: white;"
+                            data-width="50" data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="Visual Basic.net">
+                        <span class="iconify" data-icon="cib:visual-studio" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="Xamarin">
+                        <span class="iconify" data-icon="file-icons:xamarin" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="ASP.net">
+                        <span class="iconify" data-icon="bi:aspect-ratio" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                </div>
+                <!-- WWW -->
+                <div class="col-md-6 col-lg-3 my-5">
+                    <h3 class="mx-3">WWW</h3>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="HTML 5">
+                        <span class="iconify" data-icon="icomoon-free:html-five" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="CSS 3">
+                        <span class="iconify" data-icon="cib:css3" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="Bootstrap 5">
+                        <span class="iconify" data-icon="cib:bootstrap" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="React">
+                        <span class="iconify" data-icon="akar-icons:react-fill" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="PHP">
+                        <span class="iconify" data-icon="cib:php" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="Nette">
+                        <span class="iconify" data-icon="simple-icons:nette" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                </div>
+                <!-- DATABASES -->
+                <div class="col-md-6 col-lg-3 my-5">
+                    <h3 class="mx-3">Databases</h3>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="MS Access">
+                        <span class="iconify" data-icon="file-icons:microsoft-access" style="color: white;"
+                            data-width="50" data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="Oracle">
+                        <span class="iconify" data-icon="cib:oracle" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="SQL">
+                        <span class="iconify" data-icon="ant-design:console-sql-outlined" style="color: white;"
+                            data-width="50" data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="MySQL">
+                        <span class="iconify" data-icon="fontisto:mysql" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="MS SQL Server">
+                        <span class="iconify" data-icon="simple-icons:microsoftsqlserver" style="color: white;"
+                            data-width="50" data-height="50"></span></button>
+
+                </div>
+                <!-- OS -->
+                <div class="col-md-6 col-lg-3 my-5">
+                    <h3 class="mx-3">OS management</h3>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="Linux / Linux Server">
+                        <span class="iconify" data-icon="codicon:terminal-linux" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" title="Windows / Windows Server">
+                        <span class="iconify" data-icon="bi:windows" style="color: white;" data-width="50"
+                            data-height="50"></span></button>
+
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container-fluid">
+            <div class="header"><span class="headerText">>Projects</span></div>
+            <div id="projectsBody" class="row">
+                <div id="wwwProjects" class="row">
+                    <h4 class="mt-3 mx-3">WWW</h4>
+                    <!-- BOOTSTRAP HOTEL -->
+                    <div class="col-md-6 col-xl-4 col-xxl-3 mt-2">
+                        <div class="card text-bg-secondary">
+                            <a href="projects/bootstrapHotel/hotel.html" target="_blank" class="card-link"><img
+                                    src="images/bootstrapHotelScreen.jpg" class="card-img-top" alt="hotelRoyal"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Royal Sun Hotel</h5>
+                                <p class="card-text">Web for fictional company Royal Sun Hotel</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-bg-secondary">8 hour project</li>
+                                <li class="list-group-item bg-secondary d-flex justify-content-center">
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="HTML 5">
+                                        <span class="iconify" data-icon="icomoon-free:html-five" style="color: white;"
+                                            data-width="40" data-height="40"></span></button>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="CSS 3">
+                                        <span class="iconify" data-icon="cib:css3" style="color: white;" data-width="40"
+                                            data-height="40"></span></button>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                        title="Bootstrap 5">
+                                        <span class="iconify" data-icon="cib:bootstrap" style="color: white;"
+                                            data-width="40" data-height="40"></span></button>
+                                </li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-around">
 
-        <div class="contacts">
-            <h1>Contacts</h1>
+                                <a href="projects/bootstrapHotel/hotel.html" target="_blank" class="card-link">Visit
+                                    Website</a>
+                                <a href="https://github.com/Jaromir-Janac/Royal-Sun-Hotel" target="_blank"
+                                    class="card-link">Source
+                                    Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- JAVASCRIPT FORM -->
+                    <div class="col-md-6 col-xl-4 col-xxl-3 mt-2">
+                        <div class="card text-bg-secondary">
+                            <a href="projects/formJS/form.html" target="_blank" class="card-link"><img
+                                    src="images/formJSScreen.jpg" class="card-img-top" alt="hotelRoyal"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Javascript Form</h5>
+                                <p class="card-text">Reservation form for fictional company</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-bg-secondary">4 hour project</li>
+                                <li class="list-group-item bg-secondary d-flex justify-content-center">
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="HTML 5">
+                                        <span class="iconify" data-icon="icomoon-free:html-five" style="color: white;"
+                                            data-width="40" data-height="40"></span></button>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="CSS 3">
+                                        <span class="iconify" data-icon="cib:css3" style="color: white;" data-width="40"
+                                            data-height="40"></span></button>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                        title="Bootstrap 5">
+                                        <span class="iconify" data-icon="cib:bootstrap" style="color: white;"
+                                            data-width="40" data-height="40"></span></button>
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                        title="JavaScript">
+                                        <span class="iconify" data-icon="fluent:javascript-16-regular"
+                                            style="color: white;" data-width="40" data-height="40"></span></button>
+                                </li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-around">
+
+                                <a href="projects/formJS/form.html" target="_blank" class="card-link">Visit
+                                    Website</a>
+                                <a href="https://github.com/Jaromir-Janac/formJavaScript" target="_blank"
+                                    class="card-link">Source
+                                    Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <!-- HOBBIES -->
+    <section id="hobbies" class="container-fluid">
+        <div class="header"><span class="headerText">>Hobbies</span></div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
 
-    </main>
-    
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/hobbies/space.jpg" class="d-block w-100" alt="tourism">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Space Enthusiast</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/hobbies/paintball.jpg" class="d-block w-100" alt="paintball">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Paintball Player</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/hobbies/bike.jpg" class="d-block w-100" alt="bike">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bike Rider</h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/hobbies/tourism.jpg" class="d-block w-100" alt="tourism">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mountain Tourist</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/hobbies/garden.jpg" class="d-block w-100" alt="tourism">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Home Gardener</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="container-fluid">
+        <div class="header"><span class="headerText">>Contact</span></div>
+        <form class="formContact">
 
 
-    <footer>
+            <div class="container">
+                <div class="mb-1">
+                    <label for="inputName" class="form-label"></label>
+                    <input type="name" class="form-control" id="InputName1" placeholder="Name">
+                </div>
+
+                <div class="mb-1">
+                    <label for="inputEmail" class="form-label"></label>
+                    <input type="email" class="form-control" id="InputEmail1" placeholder="address@domain.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="inputText" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                        placeholder="Not working at the moment. My email adress: jaromir.janac@gmail.com"></textarea>
+                </div>
+                <div class="container d-flex justify-content-around">
+                    <input class="btn btn-secondary btn-lg disabled" type="submit" value="Send">
+                    <input class="btn btn-secondary btn-lg disabled" type="reset" value="Reset">
+                </div>
+            </div>
+    </section>
+    <!-- FOOTER -->
+    <section id="footer" class="container-fluid mt-4">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip" title="HTML 5">
+            <span class="iconify" data-icon="icomoon-free:html-five" style="color: white;" data-width="50"
+                data-height="50"></span></button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip" title="CSS 3">
+            <span class="iconify" data-icon="cib:css3" style="color: white;" data-width="50"
+                data-height="50"></span></button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip" title="Bootstrap 5">
+            <span class="iconify" data-icon="cib:bootstrap" style="color: white;" data-width="50"
+                data-height="50"></span></button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip" title="JavaScript">
+            <span class="iconify" data-icon="fluent:javascript-16-regular" style="color: white;" data-width="50"
+                data-height="50"></span></button>
+    </section>
 
 
-    </footer>
 
-    <aside>
-        <h1 class="aside">ABOUT</h1>
-        <h1 class="aside">PROJECTS</h1>
-        <h1 class="aside">CONTACTS</h1>
-    </aside>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/clock.js"></script>
 </body>
+
 </html>

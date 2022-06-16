@@ -1,0 +1,11 @@
+$theme-colors: (
+    "primary": #332f2f,
+    "secondary": #1f1f1f,
+    "warning": rgb(31, 31, 31, 0.2),
+    "info" : rgb(31, 31, 31, 0)
+
+);
+
+
+
+@import "../bootstrap/scss/bootstrap"
