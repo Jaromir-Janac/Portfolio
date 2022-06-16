@@ -177,7 +177,7 @@ body {
     font-size: 2rem;
     position: absolute;
     top: 47vh;
-    left: 30vh;
+    left: 20vw;
     z-index: 101;
 }
 
@@ -185,19 +185,48 @@ body {
 @media(orientation:landscape) {}
 
 // XS
-@media(max-width:575.98px) {}
+
+@media Screen and (max-width:767.98px) {
+    #loadingImage {
+        left: -120vw;
+    } 
+    #loadingText {
+        left: 2vw;
+    }
+}
 
 // SM
-@media(max-width:767.98px) {}
+@media Screen and (min-width:768px) {
+    #loadingImage {
+        left: -80vw;
+    } 
+    #loadingText {
+        left: 10vw;
+    }
+}
 
 // MD
-@media(max-width:991.98px) {}
+@media Screen and (min-width:992px) {
+    #loadingImage {
+        left: -40vw;
+    } 
+    #loadingText {
+        left: 15vw;
+    }
+}
 
 // LG
-@media(max-width:1199.98px) {}
+@media Screen and (min-width:1200px) {
+    #loadingImage {
+        left: 0;
+    } 
+    #loadingText {
+        left: 20vw;
+    }
+}
 
 // XL
-@media(max-width:1399.98px) {}
+//@media Screen and (max-width:1399.98px) {}
 
 // XXL
-@media(min-width:1400px) {}
+// @media Screen and (min-width:1400px) {}
