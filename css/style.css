@@ -11429,7 +11429,8 @@ body .header .headerText {
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 2;
   height: 80px;
 }
