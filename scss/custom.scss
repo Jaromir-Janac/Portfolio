@@ -3,9 +3,6 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Black Ops One', sans-serif;
@@ -29,6 +26,7 @@ body {
 }
 
 .navbar {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 2;
