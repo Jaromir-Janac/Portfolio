@@ -11452,14 +11452,14 @@ body .header .headerText {
 
 #about {
   min-height: 40vh;
-  background-color: #1f1f1f;
+  background-color: #332f2f;
 }
 #about #aboutBody {
   min-height: 45vh;
   background: url(../images/lookUp.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80vh;
+  background-position: bottom;
+  background-size: 100%;
 }
 #about .row {
   background-color: rgba(31, 31, 31, 0);
@@ -11472,12 +11472,6 @@ body .header .headerText {
   background-color: #1f1f1f;
 }
 
-#projects .card {
-  max-height: 90vh;
-}
-#projects img {
-  max-height: 30vh;
-}
 #projects .row {
   background-color: #1f1f1f;
 }
@@ -11508,21 +11502,19 @@ body .header .headerText {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-#contact {
-  height: 75vh;
-  min-height: 450px;
-}
 #contact .formContact {
+  height: 65vh;
+  min-height: 450px;
   background-color: #1f1f1f;
 }
 
 #footer {
-  height: 25vh;
+  height: 22.5vh;
   min-height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1f1f1f;
+  background-color: #332f2f;
   min-height: 10vh;
 }
 

@@ -12,8 +12,7 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 // NAVBAR ACTIVE LINK CHANGE
-
-function setAria(page) {
+const setAria = (page) => {
 
     let attribHome=document.getElementById("homeLink");
     let attribAbout=document.getElementById("aboutLink");

@@ -7,14 +7,13 @@ body {
     font-size: 16px;
     color: #fff;
     background-color: #332f2f;
+    // background-color: #1f1f1f;
 
     .header {
         height: 80px;
         background-color: #332f2f;
 
         .headerText {
-            
-
             position: relative;
             z-index: 3;
             left: 220px;
@@ -28,7 +27,7 @@ body {
     position: sticky;
     z-index: 2;
     height: 80px;
- 
+
 
     .navbar-brand h3 {
         font-size: 1.6rem;
@@ -49,7 +48,7 @@ body {
     background: url(../images/background/hyperspace.jpg);
     background-repeat: no-repeat;
 
-    #clock{
+    #clock {
         font-size: 1.5rem;
         display: flex;
         flex-direction: row;
@@ -59,14 +58,14 @@ body {
 
 #about {
     min-height: 40vh;
-    background-color: #1f1f1f;
+    background-color: #332f2f;
 
     #aboutBody {
         min-height: 45vh;
         background: url(../images/lookUp.jpg);
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 80vh;
+        background-position: bottom;
+        background-size: 100%;
     }
 
     .row {
@@ -79,7 +78,7 @@ body {
 }
 
 #skills {
- 
+
     .row {
         background-color: #1f1f1f;
     }
@@ -88,17 +87,9 @@ body {
 
 #projects {
 
-    .card {
-        max-height: 90vh;
-    }
-
-    img {
-        max-height: 30vh;
-
-    }
-
     .row {
         background-color: #1f1f1f;
+
     }
 
     a {
@@ -140,24 +131,27 @@ body {
 }
 
 #contact {
-    height: 75vh;
-    min-height: 450px;
 
     .formContact {
+        height: 65vh;
+        min-height: 450px;
         background-color: #1f1f1f;
     }
 }
 
 #footer {
-    height: 25vh;
+    height: 22.5vh;
     min-height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1f1f1f;
+    background-color: #332f2f;
     min-height: 10vh;
 
 }
+
+// LANDSCAPE
+@media(orientation:landscape) {}
 
 // XS
 @media(max-width:575.98px) {}

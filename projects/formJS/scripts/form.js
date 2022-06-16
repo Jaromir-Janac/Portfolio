@@ -50,8 +50,7 @@ function calculatePrice () {
     if (aI) {
         result += (basicPrice * 0.50)
     }
-
-
+    
     document.getElementById("outputPrice").value = result + " Kč"
     
 }
