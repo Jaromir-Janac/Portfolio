@@ -11456,7 +11456,7 @@ body .header .headerText {
 }
 #about #aboutBody {
   min-height: 45vh;
-  background: url(../images/lookUp.jpg);
+  background: url(../images/background/lookUp.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
@@ -11516,6 +11516,32 @@ body .header .headerText {
   justify-content: center;
   background-color: #332f2f;
   min-height: 10vh;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  z-index: 99;
+}
+
+#loadingImage {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#loadingText {
+  font-size: 2rem;
+  position: absolute;
+  top: 47vh;
+  left: 30vh;
+  z-index: 101;
 }
 
 /*# sourceMappingURL=style.css.map */
