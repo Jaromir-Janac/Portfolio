@@ -11538,13 +11538,14 @@ body .header .headerText {
   top: 0;
   left: 0;
   z-index: 100;
+  opacity: 0.6;
 }
 
 #loadingText {
   font-size: 2rem;
   position: absolute;
-  top: 47vh;
-  left: 20vw;
+  top: 25vh;
+  left: 1vw;
   z-index: 101;
 }
 
@@ -11552,36 +11553,20 @@ body .header .headerText {
   #loadingImage {
     left: -120vw;
   }
-
-  #loadingText {
-    left: 2vw;
-  }
 }
 @media Screen and (min-width: 768px) {
   #loadingImage {
     left: -80vw;
-  }
-
-  #loadingText {
-    left: 10vw;
   }
 }
 @media Screen and (min-width: 992px) {
   #loadingImage {
     left: -40vw;
   }
-
-  #loadingText {
-    left: 15vw;
-  }
 }
 @media Screen and (min-width: 1200px) {
   #loadingImage {
     left: 0;
-  }
-
-  #loadingText {
-    left: 20vw;
   }
 }
 
