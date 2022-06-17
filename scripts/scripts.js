@@ -1,19 +1,16 @@
 // BOOTSTRAP POPOVER AND TOOLTIP INICIALIZATION
-
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // NAVBAR HAMBURGER CLOSING ON CLICK
-
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
 // NAVBAR ACTIVE LINK CHANGE
 const setAria = (page) => {
-
     let attribHome=document.getElementById("homeLink");
     let attribAbout=document.getElementById("aboutLink");
     let attribSkills=document.getElementById("skillsLink");
@@ -59,5 +56,6 @@ const setAria = (page) => {
     }
 
 }
+
 // ONLOAD EVENT
 window.onload = function(){ document.getElementById("loading").style.display = "none" }
