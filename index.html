@@ -42,13 +42,11 @@
             <div class="collapse navbar-collapse navbar-collapse justify-content-end" data-toggle="collapse"
                 data-target=".navbar-collapse" id="navbarNav">
                 <!-- NAVBAR ITEMS -->
-                <ul class="navbar-nav justify-content-end align-items-center">
+                <ul class="navbar-nav">
                     <!-- HOME -->
                     <li class="nav-item">
-                        <a id="homeLink" class="nav-link active" aria-current="page" href="#pageTop"
-                            onmouseenter="this.classList.add('border-bottom'
-                            )"
-                            onmouseleave="this.classList.remove('border-bottom'
+                        <a id="homeLink" class="nav-link active" aria-current="page" href="#pageTop" onmouseenter="this.classList.add('border-bottom'
+                            )" onmouseleave="this.classList.remove('border-bottom'
                             )" onclick="setAria('home')">Home</a>
                     </li>
                     <!-- ABOUT -->
@@ -317,7 +315,8 @@
                                 <p class="card-text">Web for fictional company</p>
                                 <!-- CARD ITEMS -->
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item text-bg-secondary border-bottom border-top"><i class="bi bi-stopwatch"></i>&nbsp;8 hour
+                                    <li class="list-group-item text-bg-secondary border-bottom border-top"><i
+                                            class="bi bi-stopwatch"></i>&nbsp;8 hour
                                         project</li>
                                     <li class="list-group-item bg-secondary d-flex justify-content-center mt-2">
                                         <!-- HTML 5 ICON -->
@@ -377,7 +376,8 @@
                                 <p class="card-text">Reservation form</p>
                                 <!-- CARD ITEMS -->
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item text-bg-secondary border-bottom border-top"><i class="bi bi-stopwatch"></i>&nbsp;4 hour
+                                    <li class="list-group-item text-bg-secondary border-bottom border-top"><i
+                                            class="bi bi-stopwatch"></i>&nbsp;4 hour
                                         project</li>
                                     <li class="list-group-item bg-secondary d-flex justify-content-center mt-2">
                                         <!-- HTML5 ICON -->
@@ -421,6 +421,81 @@
                                     <!-- SOURCE LINK -->
                                     <div id="fJSLinkSource" class="col-6 d-flex justify-content-center">
                                         <a href="https://github.com/Jaromir-Janac/formJavaScript" target="_blank"
+                                            class="card-link"
+                                            onmouseenter="document.getElementById('fJSLinkSource').classList.add('border-start', 'border-end')"
+                                            onmouseleave="document.getElementById('fJSLinkSource').classList.remove('border-start', 'border-end')">Source
+                                            Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- REACT FORM -->
+                    <div class="col-md-6 col-lg-4 col-xxl-3 mt-2 h-50">
+                        <div class="card text-bg-secondary">
+                            <!-- CARD IMAGE -->
+                            <a href="projects/reactForm/index.html" target="_blank" class="card-link"><img
+                                    src="images/Projects/FormJSScreen.jpg" class="card-img-top" alt="formJSScreen"></a>
+                            <!-- CARD BODY -->
+                            <div class="card-body">
+                                <!-- CARD TITLE -->
+                                <h5 class="card-title border-bottom pb-2">React.js Form</h5>
+                                <!-- CARD TEXT -->
+                                <p class="card-text">Reservation form</p>
+                                <!-- CARD ITEMS -->
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item text-bg-secondary border-bottom border-top"><i
+                                            class="bi bi-stopwatch"></i>&nbsp;4 hour
+                                        project</li>
+                                    <li class="list-group-item bg-secondary d-flex justify-content-center mt-2">
+                                        <!-- HTML5 ICON -->
+                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="HTML 5">
+                                            <span class="iconify" data-icon="icomoon-free:html-five"
+                                                style="color: white;" data-width="40" data-height="40"></span>
+                                        </button>
+                                        <!-- CSS3 ICON -->
+                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="CSS 3">
+                                            <span class="iconify" data-icon="cib:css3" style="color: white;"
+                                                data-width="40" data-height="40"></span>
+                                        </button>
+                                        <!-- BOOTSTRAP 5 ICON -->
+                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Bootstrap 5">
+                                            <span class="iconify" data-icon="cib:bootstrap" style="color: white;"
+                                                data-width="40" data-height="40"></span>
+                                        </button>
+                                        <!-- JAVASCRIPT ICON -->
+                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="JavaScript">
+                                            <span class="iconify" data-icon="fluent:javascript-16-regular"
+                                                style="color: white;" data-width="40" data-height="40"></span>
+                                        </button>
+                                        <!-- REACT.JS ICON -->
+                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="React.js">
+                                            <span class="iconify" data-icon="akar-icons:react-fill"
+                                                style="color: white;" data-width="50" data-height="50"></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <!-- CARD LINKS -->
+                                <div class="mt-1 py-2 border-bottom border-top row">
+                                    <!-- VISIT LINK -->
+                                    <div id="fJSLinkVisit" class="col-6 d-flex justify-content-center">
+                                        <a href="projects/reactForm/index.html" target="_blank" class="card-link"
+                                            onmouseenter="document.getElementById('fJSLinkVisit').classList.add('border-start', 'border-end')"
+                                            onmouseleave="document.getElementById('fJSLinkVisit').classList.remove('border-start', 'border-end')">Visit
+                                            Website</a>
+                                    </div>
+                                    <!-- SOURCE LINK -->
+                                    <div id="fJSLinkSource" class="col-6 d-flex justify-content-center">
+                                        <a href="https://github.com/Jaromir-Janac/formReactJS" target="_blank"
                                             class="card-link"
                                             onmouseenter="document.getElementById('fJSLinkSource').classList.add('border-start', 'border-end')"
                                             onmouseleave="document.getElementById('fJSLinkSource').classList.remove('border-start', 'border-end')">Source
