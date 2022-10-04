@@ -11414,6 +11414,7 @@ body {
   background-color: #332f2f;
 }
 body .header {
+  width: 100vw;
   height: 80px;
   background-color: #332f2f;
 }

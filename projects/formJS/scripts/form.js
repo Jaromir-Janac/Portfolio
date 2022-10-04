@@ -18,7 +18,6 @@ function dateEnd (){
     msec += days * 24 * 60 * 60 * 1000
     let dateSubmited = new Date(msec)
     document.getElementById("outputDateEnd").valueAsDate=dateSubmited
-
 }
 
 // Calculate price

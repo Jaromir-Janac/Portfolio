@@ -12,6 +12,7 @@ body {
     // background-color: #1f1f1f;
 
     .header {
+        width: 100vw;
         height: 80px;
         background-color: #332f2f;
 
@@ -108,7 +109,6 @@ body {
 }
 
 #hobbies {
-
     .carousel-caption {
         background-color: rgba(0, 0, 0, .4);
 
@@ -135,7 +135,6 @@ body {
 }
 
 #contact {
-
     .formContact {
         height: 65vh;
         min-height: 450px;

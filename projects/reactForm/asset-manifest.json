@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.182f5c35.css",
-    "main.js": "./static/js/main.0a65536d.js",
+    "main.css": "./static/css/main.1e8b77c7.css",
+    "main.js": "./static/js/main.a7e26c8b.js",
+    "static/media/bikeRoad.jpg": "./static/media/bikeRoad.328738c9ed71152ec6ab.jpg",
     "static/media/bikeBG.jpg": "./static/media/bikeBG.543c0052bcfc3857eec2.jpg",
+    "static/media/bikeAllTerrain.jpg": "./static/media/bikeAllTerrain.ae54be423747f05f73e6.jpg",
+    "static/media/bikeRackNone.jpg": "./static/media/bikeRackNone.d595b43e1b119d95c3af.jpg",
+    "static/media/bikeMountain.jpg": "./static/media/bikeMountain.6506ffd5a9ee56dc4da4.jpg",
+    "static/media/bikeKids.jpg": "./static/media/bikeKids.6b9aee11e3d73f313eac.jpg",
+    "static/media/bikeRackBack.jpg": "./static/media/bikeRackBack.1361569e9eff07f36d21.jpg",
+    "static/media/bikeRackRoof.jpg": "./static/media/bikeRackRoof.70259a47654f419ab484.jpg",
+    "static/media/BRBLogo.png": "./static/media/BRBLogo.c236e47eef0ebd34fb67.png",
     "index.html": "./index.html",
-    "main.182f5c35.css.map": "./static/css/main.182f5c35.css.map",
-    "main.0a65536d.js.map": "./static/js/main.0a65536d.js.map"
+    "main.1e8b77c7.css.map": "./static/css/main.1e8b77c7.css.map",
+    "main.a7e26c8b.js.map": "./static/js/main.a7e26c8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.182f5c35.css",
-    "static/js/main.0a65536d.js"
+    "static/css/main.1e8b77c7.css",
+    "static/js/main.a7e26c8b.js"
   ]
 }
